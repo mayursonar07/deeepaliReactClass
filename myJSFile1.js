@@ -86,6 +86,11 @@ function showTopRatedRes() {
 
     console.log(restaurants.ratingsWise.topRated);
 
+    // Hide the existing buttons
+    // Take control of HTML elements
+    const deleteBtn = document.getElementById('dltBtn');
+    deleteBtn.classList.add("hidden")
+
     // Display on my HTML Document
     let resName = document.createElement("p");
     // <p>Res name</p>
