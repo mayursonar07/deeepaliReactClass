@@ -100,3 +100,22 @@ function showTopRatedRes() {
 
 
 }
+
+function fun() {
+    const itemName = document.getElementById('itemInputBox');
+    const itemList = document.getElementById('itemList');
+
+    const item  = document.createElement('li');
+    item.innerText = itemName.value;
+
+    itemList.appendChild(item);
+}
+
+function testFunction(e) {
+    console.log("Key press detected");
+    console.log(e.key);
+
+    if(e.key === 'Enter') {
+        fun();
+    }
+}
